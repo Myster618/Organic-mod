@@ -4,5 +4,5 @@ author: "Myster618"
 main: "org.OrganicMod"
 description: "Add new planet, turrets, factori"
 version: 1.0
-minGameVersion: 139
+minGameVersion: 140
 java: true
