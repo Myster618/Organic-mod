@@ -2,14 +2,15 @@ package org.content;
 
 import arc.graphics.*;
 import arc.struct.*;
+import mindustry.*;
+import mindustry.game.*;
+import mindustry.graphics.*;
 import mindustry.type.*;
 
 import static mindustry.content.Items.*;
 
 public class OrgItems {
   public static Item calcium, carbon, chitin, phosphorus, resin, tissue;
-  
-  public static final Seq<Item> termanphettItems = new Seq<>();
   
   public static void load() {
     calcium  = new Item("calcium", Color.valueOf("ffffff")) {{
@@ -41,10 +42,5 @@ public class OrgItems {
       flammability = 0.2f;
       hardness = 2;
     }};
-    
-    
-    termanphettItems.addAll(
-          calcium, carbon, chitin, phosphorus, resin, tissue
-    );
   }
 }
