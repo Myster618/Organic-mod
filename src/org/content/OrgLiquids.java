@@ -12,7 +12,7 @@ import static mindustry.content.Liquids.*;
 
 
 public class OrgLiquids {
-  public static Liquid energia, clorine, liquid-resin;
+  public static Liquid energia, clorine, liquidResin;
   
   public static void load() {
     blood = new Liquid("energia", Color.valueOf("fb9567")) {{
@@ -21,7 +21,7 @@ public class OrgLiquids {
       lightColor = Color.valueOf("fb7165");
     }};
     
-    liquid-resin = new Liquid("liquid-resin", Color.valueOf("eac629")) {{
+    liquidResin = new Liquid("liquidResin", Color.valueOf("eac629")) {{
       temperature = 0.3f;
       viscosity = 0.1f;
       lightColor = Color.valueOf("ffd414");
