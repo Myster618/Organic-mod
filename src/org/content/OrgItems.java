@@ -41,10 +41,6 @@ public class OrgItems {
     tissue = new Item("tissue", Color.valueOf("999781")) {{
       flammability = 0.2f;
       hardness = 2;
-    }};
-    
-    serpuloItems.addAll(
-      calcium, carbon, chitin, phosphorus, resin, tissue
-     );                
+    }};            
   }
 }
