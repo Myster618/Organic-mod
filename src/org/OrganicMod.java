@@ -27,6 +27,6 @@ public class OrganicMod extends Mod{
 
     @Override
     public void loadContent() {
-        OrgItems.load;
+        OrgItems.load();
     }
 }
