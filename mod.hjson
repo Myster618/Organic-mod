@@ -2,7 +2,7 @@ displayName: "Organic mod"
 name: "org"
 author: "Myster618"
 main: "org.OrganicMod"
-description: "Add new planet, turrets, factori"
+description: "Add new planet, turrets, factories and more"
 version: 1.0
 minGameVersion: 140
 java: true
