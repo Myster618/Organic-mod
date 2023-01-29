@@ -28,17 +28,17 @@ public class OrgItems {
     
     phosphorus = new Item("phosphorus", Color.valueOf("742222")) {{
       hardness = 2;
-      flammability = 1.5;
-      explosiveness = 0.0005;
+      flammability = 1.5f;
+      explosiveness = 0.0005f;
     }};
                           
     resin = new Item("resin", Color.valueOf("eac629")) {{
-      flammability = 0.05;
-      charge = 0.2;
+      flammability = 0.05f;
+      charge = 0.2f;
     }};
     
     tissue = new Item("tissue", Color.valueOf("999781")) {{
-      flammability = 0.2;
+      flammability = 0.2f;
       hardness = 2;
     }};
     
