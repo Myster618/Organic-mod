@@ -8,6 +8,9 @@ import mindustry.game.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
 
+import static mindustry.content.Liquids.*;
+
+
 public class OrgLiquids {
   public static Liquid energia, clorine, liquid-resin;
   
