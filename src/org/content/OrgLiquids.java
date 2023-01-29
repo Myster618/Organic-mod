@@ -15,7 +15,7 @@ public class OrgLiquids {
   public static Liquid energia, clorine, liquidResin;
   
   public static void load() {
-    blood = new Liquid("energia", Color.valueOf("fb9567")) {{
+    energia = new Liquid("energia", Color.valueOf("fb9567")) {{
       temperature = 0.6f;
       viscosity = 0.9f;
       lightColor = Color.valueOf("fb7165");
