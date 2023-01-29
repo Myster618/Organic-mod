@@ -1,4 +1,4 @@
-package example;
+package org;
 
 import arc.*;
 import arc.util.*;
