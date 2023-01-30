@@ -3,7 +3,7 @@ package org.content;
 import arc.graphics.*;
 import arc.math.*;
 import arc.struct.*;
-import org.*;
+import org.content*;
 import mindustry.content.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
@@ -72,7 +72,6 @@ public class OrgBlocks {
     
     energiaCrater = new Floor("energia-crater") {{
       attributes.set(Attribute.heat, 1f);
-      blendGroup = basalt;
       emitLight = true;
       lightRadius = 50f;
       lightColor = Color.orange.cpy().a(0.3f);
@@ -80,7 +79,6 @@ public class OrgBlocks {
     
     energiaPuddle = new Floor("energia-puddle") {{
       attributes.set(Attribute.heat, 0.75f);
-      blendGroup = basalt;
       emitLight = true;
       lightRadius = 30f;
       lightColor = Color.orange.cpy().a(0.15f);
