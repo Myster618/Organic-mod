@@ -63,7 +63,7 @@ public class OrgBlocks {
     chitinOre = new OreBlock(OrgItems.chitin);
     
     carbonFloor = new Floor("carbon-floor") {{
-      ItemDrop = OrgItems.carbon;
+      itemDrop = OrgItems.carbon;
     }};
     
     carbonBlock = new StaticWall("carbon-block") {{
