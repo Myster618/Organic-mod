@@ -1,4 +1,4 @@
-package org.content
+package org.content;
 
 import arc.graphics.*;
 import arc.math.*;
