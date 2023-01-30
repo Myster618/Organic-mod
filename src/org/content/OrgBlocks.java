@@ -56,7 +56,7 @@ public class OrgBlocks {
   
   public static void load() {
     
-    calciteOre = new OreBlock(OrgItems.calcium);
+    calciumOre = new OreBlock(OrgItems.calcium);
     
     carbonOre = new OreBlock(OrgItems.carbon);
     
