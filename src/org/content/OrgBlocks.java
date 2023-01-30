@@ -3,7 +3,7 @@ package org.content;
 import arc.graphics.*;
 import arc.math.*;
 import arc.struct.*;
-import org.content*;
+import org.*;
 import mindustry.content.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
