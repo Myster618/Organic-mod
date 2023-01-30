@@ -24,8 +24,8 @@ import mindustry.world.meta.*;
 public class OrgBlocks {
   public static Block
     //environment
-    calciteOre, carbonFloor, carbonWall, carbonOre, chitinOre, energiaCrater, 
-    energiaPuddle, fleshFloor, fleshWall, plantFloor, plantWall, 
+    calciteOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
+    energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
     shallowEnergia, deepEnergia,
     //decorations
     boulderGreen, boulderRed, boulderBlack, sproutLightgreen, sproutDarkgreen,
@@ -66,7 +66,7 @@ public class OrgBlocks {
       ItemDrop = OrgItems.carbon;
     }};
     
-    carbonWall = new StaticWall("carbon-wall") {{
+    carbonBlock = new StaticWall("carbon-block") {{
       carbonFloor.asFloor().wall = this;
     }};
     
@@ -86,13 +86,13 @@ public class OrgBlocks {
       
     fleshFloor = new Floor("flesh-floor");
     
-    fleshWall = new StaticWall("flesh-wall") {{
+    fleshBlock = new StaticWall("flesh-block") {{
       fleshFloor.asFloor().wall = this;
     }};
     
     plantFloor = new Floor("plant-floor");
     
-    plantWall = new StaticWall("plant-wall") {{
+    plantBlock = new StaticWall("plant-block") {{
       plantFloor.asFloor().wall = this;
     }};
   }
