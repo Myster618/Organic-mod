@@ -24,7 +24,7 @@ import mindustry.world.meta.*;
 public class OrgBlocks {
   public static Block
     //environment
-    calciteOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
+    calciumOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
     energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
     shallowEnergia, deepEnergia,
     //decorations
@@ -56,7 +56,7 @@ public class OrgBlocks {
   
   public static void load() {
     
-    calciteOre = new OreBlock(OrgItems.calcite);
+    calciteOre = new OreBlock(OrgItems.calcium);
     
     carbonOre = new OreBlock(OrgItems.carbon);
     
