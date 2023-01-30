@@ -101,7 +101,7 @@ public class OrgBlocks {
       variants = 0;
       albedo = 0.9f;
       isLiquid = true;
-      liquidDrop = OrgLIquids.energia;
+      liquidDrop = OrgLiquids.energia;
       cacheLayer = CacheLayer.water;
       supportsOverlay = true;
     }};
@@ -113,7 +113,7 @@ public class OrgBlocks {
       albedo = 0.9f;
       drownTime = 300f;
       isLiquid = true;
-      liquidDrop = OrgLIquids.energia;
+      liquidDrop = OrgLiquids.energia;
       cacheLayer = CacheLayer.water;
       supportsOverlay = true;
     }};
