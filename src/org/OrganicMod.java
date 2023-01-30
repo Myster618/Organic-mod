@@ -30,5 +30,6 @@ public class OrganicMod extends Mod{
     public void loadContent() {
         OrgItems.load();
         OrgLiquids.load();
+        OrgBlocks.load();
     }
 }
