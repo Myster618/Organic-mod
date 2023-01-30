@@ -95,5 +95,27 @@ public class OrgBlocks {
     plantBlock = new StaticWall("plant-block") {{
       plantFloor.asFloor().wall = this;
     }};
+    
+    shallowEnergia = new Floor("shallow-energia") {{
+      speedMultiplier = 0.75f;
+      variants = 0;
+      albedo = 0.9f;
+      isLiquid = true;
+      liquidDrop = OrgLIquids.energia;
+      cacheLayer = CacheLayer.water;
+      supportsOverlay = true;
+    }};
+    
+    deepEnergia = new Floor("deep-energia") {{
+      speedMultiplier = 0.5f;
+      variants = 0;
+      liquidMultiplier = 1.5f;
+      albedo = 0.9f;
+      drownTime = 300f;
+      isLiquid = true;
+      liquidDrop = OrgLIquids.energia;
+      cacheLayer = CacheLayer.water;
+      supportsOverlay = true;
+    }};
   }
 }
