@@ -26,7 +26,7 @@ public class OrgBlocks {
     //environment
     calciumOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
     energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
-    shallowEnergia, deepEnergia,
+    shallowEnergia, deepEnergia, resinFloor, resinBlock,
     //decorations
     boulderGreen, boulderRed, boulderBlack, sproutLightgreen, sproutDarkgreen,
     //turrets
@@ -87,7 +87,7 @@ public class OrgBlocks {
     fleshFloor = new Floor("flesh-floor");
     
     fleshBlock = new StaticWall("flesh-block") {{
-      fleshFloor.asFloor().wall = this;
+      fleshFloor.asFloor().wall = energiaPuddle.asFloor().wall = energiaCrater.asFloor().wall = this;
     }};
     
     plantFloor = new Floor("plant-floor");
@@ -116,6 +116,14 @@ public class OrgBlocks {
       liquidDrop = OrgLiquids.energia;
       cacheLayer = CacheLayer.water;
       supportsOverlay = true;
+    }};
+    
+    resinFloor = new Floor("resin-floor") {{
+      speedMultiplier = 0.2f;
+    }};
+    
+    resinBlock = new StaticWall("resin-block") {{
+      resinFloor.asFloor().wall = this;
     }};
   }
 }
