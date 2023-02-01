@@ -26,7 +26,7 @@ public class OrgBlocks {
     //environment
     calciumOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
     energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
-    shallowEnergia, deepEnergia, resinFloor, resinBlock,
+    shallowEnergia, deepEnergia, resinFloor, resinBlock, muddySand,
     //decorations
     boulderGreen, boulderRed, boulderBlack, sproutLightgreen, sproutDarkgreen,
     //turrets
@@ -124,6 +124,11 @@ public class OrgBlocks {
     
     resinBlock = new StaticWall("resin-block") {{
       resinFloor.asFloor().wall = this;
+    }};
+    
+    muddySand = new Floor("muddy-sand") {{
+      itemDrop = Items.sand;
+      playerUnmineable = true;
     }};
   }
 }
