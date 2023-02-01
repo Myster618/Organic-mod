@@ -4,6 +4,7 @@ import arc.graphics.*;
 import arc.math.*;
 import arc.struct.*;
 import org.*;
+import org.world.meta.*;
 import mindustry.content.*;
 import mindustry.entities.bullet.*;
 import mindustry.entities.effect.*;
@@ -64,6 +65,7 @@ public class OrgBlocks {
     
     carbonFloor = new Floor("carbon-floor") {{
       itemDrop = OrgItems.carbon;
+      attributes.set(Attribute.resin, 0.2f);
     }};
     
     carbonBlock = new StaticWall("carbon-block") {{
@@ -85,12 +87,14 @@ public class OrgBlocks {
     }};
       
     fleshFloor = new Floor("flesh-floor");
+    attributes.set(Attribute.resin, 0.5f);
     
     fleshBlock = new StaticWall("flesh-block") {{
       fleshFloor.asFloor().wall = energiaPuddle.asFloor().wall = energiaCrater.asFloor().wall = this;
     }};
     
     plantFloor = new Floor("plant-floor");
+    attributes.set(Attribute.resin, 0.5f);
     
     plantBlock = new StaticWall("plant-block") {{
       plantFloor.asFloor().wall = this;
@@ -120,6 +124,7 @@ public class OrgBlocks {
     
     resinFloor = new Floor("resin-floor") {{
       speedMultiplier = 0.2f;
+      attributes.set(Attribute.resin, 1.5f);
     }};
     
     resinBlock = new StaticWall("resin-block") {{
@@ -127,6 +132,7 @@ public class OrgBlocks {
     }};
     
     muddySand = new Floor("muddy-sand") {{
+      attributes.set(Attribute.resin, 0.5f);
       itemDrop = Items.sand;
       playerUnmineable = true;
     }};
