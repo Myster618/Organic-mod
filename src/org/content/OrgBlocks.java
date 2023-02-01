@@ -101,7 +101,7 @@ public class OrgBlocks {
     }};
     
     deepEnergia = new Floor("deep-energia") {{
-      speedMultiplier = 0.5f;
+      speedMultiplier = 0.25f;
       variants = 0;
       liquidMultiplier = 1.5f;
       albedo = 0.9f;
@@ -115,6 +115,7 @@ public class OrgBlocks {
     resinFloor = new Floor("resin-floor") {{
       speedMultiplier = 0.2f;
       attributes.set(OrgAttribute.resin, 0.75f);
+      attributes.set(Attribute.water, -0.25f);
     }};
     
     resinBlock = new StaticWall("resin-block") {{
@@ -122,8 +123,11 @@ public class OrgBlocks {
     }};
     
     muddySand = new Floor("muddy-sand") {{
+      speedMultiplier = 0.2f;
       itemDrop = Items.sand;
       playerUnmineable = true;
+      attributes.set(OrgAttribute.resin, 0.15f);
+      attributes.set(Attribute.water, 0.75f);
     }};
   }
 }
