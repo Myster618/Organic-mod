@@ -114,6 +114,7 @@ public class OrgBlocks {
     
     resinFloor = new Floor("resin-floor") {{
       speedMultiplier = 0.2f;
+      attributes.set(OrgAttribute.resin, 0.75f);
     }};
     
     resinBlock = new StaticWall("resin-block") {{
