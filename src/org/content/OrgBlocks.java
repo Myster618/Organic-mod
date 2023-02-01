@@ -6,18 +6,11 @@ import arc.struct.*;
 import org.*;
 import org.world.meta.*;
 import mindustry.content.*;
-import mindustry.entities.bullet.*;
-import mindustry.entities.effect.*;
-import mindustry.entities.part.*;
-import mindustry.entities.pattern.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.world.*;
-import mindustry.world.blocks.defense.*;
-import mindustry.world.blocks.defense.turrets.*;
 import mindustry.world.blocks.environment.*;
-import mindustry.world.blocks.production.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
