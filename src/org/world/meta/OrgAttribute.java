@@ -1,7 +1,6 @@
 package org.world.meta;
 
 import arc.*;
-import mindustry.game.EventType.*;
 import mindustry.world.meta.*;
 
 import static mindustry.content.Blocks.*;
