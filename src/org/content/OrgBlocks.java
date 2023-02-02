@@ -20,7 +20,7 @@ public class OrgBlocks {
     //environment
     calciumOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
     energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
-    shallowEnergia, deepEnergia, resinFloor, resinBlock, muddySand,
+    shallowEnergia, deepEnergia, resinFloor, resinBlock, muddySand, squama,
     //decorations
     boulderGreen, boulderRed, boulderBlack, sproutLightgreen, sproutDarkgreen,
     //turrets
@@ -128,6 +128,16 @@ public class OrgBlocks {
       playerUnmineable = true;
       attributes.set(OrgAttribute.resin, 0.15f);
       attributes.set(Attribute.water, 0.75f);
+    }};
+    
+    squama = new Floor("squama") {{
+      attributes.set(OrgAttribute.resin, 0.25f);
+      attributes.set(Attribute.water, -0.25f);
+    }};
+    
+    squamaPlate = new Floor("squama-plate") {{
+      attributes.set(OrgAttribute.resin, 0.15f);
+      attributes.set(Attribute.water, -0.25f);
     }};
   }
 }
