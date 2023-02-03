@@ -153,5 +153,6 @@ public class OrgBlocks {
     boulderSquama = new Prop("squama-boulder") {{
       variants = 2;
       squama.asFloor().decoration = squamaPlate.asFloor().decoration = this;
+    }};
   }
 }
