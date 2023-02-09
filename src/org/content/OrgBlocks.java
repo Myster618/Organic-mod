@@ -21,7 +21,7 @@ public class OrgBlocks {
     calciumOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
     energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
     shallowEnergia, deepEnergia, resinFloor, resinBlock, muddySand, squama, squamaPlate,
-    muddy-sand-block, 
+    muddySandBlock, 
     //decorations
     boulderSquama, boulderRed, boulderBlack, tree, treeFruits, treeDead, 
     //turrets
