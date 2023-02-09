@@ -21,6 +21,7 @@ public class OrgBlocks {
     calciumOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
     energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
     shallowEnergia, deepEnergia, resinFloor, resinBlock, muddySand, squama, squamaPlate,
+    muddy-sand-block, 
     //decorations
     boulderSquama, boulderRed, boulderBlack, tree, treeFruits, treeDead, 
     //turrets
@@ -128,6 +129,10 @@ public class OrgBlocks {
       playerUnmineable = true;
       attributes.set(OrgAttribute.resin, 0.15f);
       attributes.set(Attribute.water, 0.75f);
+    }};
+
+    muddySandBlock = new StaticWall("muddy-sand-block") {{
+      muddySand.asFloor().wall = this;
     }};
     
     squama = new Floor("squama") {{
