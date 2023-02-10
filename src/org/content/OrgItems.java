@@ -10,12 +10,11 @@ import mindustry.type.*;
 import static mindustry.content.Items.*;
 
 public class OrgItems {
-  public static Item calcium, carbon, chitin, phosphorus, resin, tissue;
+  public static Item calcium, carbon, chitin, phosphorus, resin, tissue, coral;
   
   public static void load() {
     calcium  = new Item("calcium", Color.valueOf("ffffff")) {{
-      hardness = 1;
-      alwaysUnlocked = true;
+      hardness = 2;
     }};
     
     carbon = new Item("carbon", Color.valueOf("3c3838")) {{
@@ -24,7 +23,8 @@ public class OrgItems {
     }};
     
     chitin = new Item("chitin", Color.valueOf("ebeef5")) {{
-      hardness = 3;
+      hardness = 1;
+      alwaysUnlocked = true;
     }};
     
     phosphorus = new Item("phosphorus", Color.valueOf("742222")) {{
@@ -35,12 +35,15 @@ public class OrgItems {
                           
     resin = new Item("resin", Color.valueOf("eac629")) {{
       flammability = 0.05f;
-      charge = 0.2f;
     }};
     
     tissue = new Item("tissue", Color.valueOf("999781")) {{
       flammability = 0.2f;
       hardness = 2;
-    }};            
+    }};
+    
+    coral = new Item("coral", Color.valueOf("ffa4a4")) {{
+      hardness = 3;
+    }};
   }
 }
