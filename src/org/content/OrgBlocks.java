@@ -59,7 +59,9 @@ public class OrgBlocks {
     
     wallOreCalcium = new OreBlock("wall-ore-calcium", OrgItems.calcium);
     
-    wallOreCoral = new OreBlock("wall-ore-coral", OrgItems.coral);
+    Coral = new StaticWall("coral-block") {{
+      itemDrop = OrgItems.coral;
+    }};
     
     carbonFloor = new Floor("carbon-floor") {{
       itemDrop = OrgItems.carbon;
