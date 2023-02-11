@@ -21,7 +21,7 @@ public class OrgBlocks {
     calciumOre, carbonFloor, carbonBlock, carbonOre, chitinOre, energiaCrater, 
     energiaPuddle, fleshFloor, fleshBlock, plantFloor, plantBlock, 
     shallowEnergia, deepEnergia, resinFloor, resinBlock, muddySand, squama, squamaPlate,
-    muddySandBlock, 
+    muddySandBlock, wallOreCalcium, wallOreCoral,
     //decorations
     boulderSquama, boulderRed, boulderBlack, tree, treeFruits, treeDead, 
     //turrets
@@ -56,6 +56,10 @@ public class OrgBlocks {
     carbonOre = new OreBlock(OrgItems.carbon);
     
     chitinOre = new OreBlock(OrgItems.chitin);
+    
+    wallOreCalcium = new OreBlock("wall-ore-calcium", OrgItems.calcium);
+    
+    wallOreCoral = new OreBlock("wall-ore-coral", OrgItems.coral);
     
     carbonFloor = new Floor("carbon-floor") {{
       itemDrop = OrgItems.carbon;
