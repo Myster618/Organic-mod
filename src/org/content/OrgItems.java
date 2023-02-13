@@ -10,7 +10,7 @@ import mindustry.type.*;
 import static mindustry.content.Items.*;
 
 public class OrgItems {
-  public static Item calcium, carbon, chitin, phosphorus, resin, tissue, coral;
+  public static Item calcium, carbon, chitin, phosphorus, resin, tissue, coral, shruff;
   
   public static void load() {
     calcium  = new Item("calcium", Color.valueOf("ffffff")) {{
@@ -40,6 +40,10 @@ public class OrgItems {
     tissue = new Item("tissue", Color.valueOf("999781")) {{
       flammability = 0.2f;
       hardness = 2;
+    }};
+
+    shruff = new Item("shruff", Color.valueOf("989ba3")) {{
+      hardness = 3;
     }};
     
     coral = new Item("coral", Color.valueOf("ffa4a4")) {{
