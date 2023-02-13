@@ -57,7 +57,9 @@ public class OrgBlocks {
     
     chitinOre = new OreBlock(OrgItems.chitin);
     
-    wallOreCalcium = new OreBlock("wall-ore-calcium", OrgItems.calcium);
+    wallOreCalcium = new OreBlock("wall-ore-calcium", OrgItems.calcium) {{
+      wallOre = true;
+    }};
     
     Coral = new StaticWall("coral-block") {{
       itemDrop = OrgItems.coral;
