@@ -23,7 +23,7 @@ public class OrgBlocks {
     shallowEnergia, deepEnergia, resinFloor, resinBlock, muddySand, squama, squamaPlate,
     muddySandBlock, wallOreCalcium, Coral,
     //decorations
-    boulderSquama, boulderRed, boulderBlack, tree, treeFruits, treeDead, 
+    boulderSquama, boulderRed, boulderBlack, tree, treeFruits, treeDead, resinOutgrowth, 
     //turrets
     bloodlust, jet, minigun, needle, mender, sower,
     //walls
@@ -172,5 +172,10 @@ public class OrgBlocks {
     treeFruits = new Prop("tree-fruits");
 
     treeDead = new Prop("tree-dead");
+
+    resinOutgrowth = new Prop("resin-outgrowth") {{
+      resinFloor.asFloor().decoration = this;
+      variants = 2;
+    }};
   }
 }
