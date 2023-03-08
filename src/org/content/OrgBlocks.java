@@ -5,6 +5,7 @@ import arc.math.*;
 import arc.struct.*;
 import org.*;
 import org.world.meta.*;
+import org.world.blocks.storage.*;
 import mindustry.content.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
