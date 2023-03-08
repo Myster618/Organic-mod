@@ -188,6 +188,6 @@ public class OrgBlocks {
       itemCapacity = 3000;
       health = 2000;
       size = 3;
-    }
+    }};
   }
 }
