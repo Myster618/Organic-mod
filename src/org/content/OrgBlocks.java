@@ -3,15 +3,20 @@ package org.content;
 import arc.graphics.*;
 import arc.math.*;
 import arc.struct.*;
-import org.*;
-import org.world.meta.*;
-import org.world.blocks.storage.*;
-import mindustry.tools.*;
-import mindustry.content.*;
+import mindustry.*;
+import mindustry.entities.*;
+import mindustry.entities.bullet.*;
+import mindustry.entities.effect.*;
+import mindustry.entities.part.*;
+import mindustry.entities.pattern.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.world.*;
+import org.*;
+import org.world.meta.*;
+import org.world.blocks.storage.*;
+import mindustry.content.*;
 import mindustry.world.blocks.environment.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.draw.*;
@@ -182,7 +187,7 @@ public class OrgBlocks {
     }};
     
     coreSprout = new SolarCore("core-sprout") {{
-      requirements(Category.effect, with(Items.copper, 1200, Items.lead, 1000, Items.sand, 600));
+      requirements(Category.effect, with(OrgItems.carbon, 1200, OrgItems.calcium, 1000, OrgItems.phosphorus, 600));
       alwaysUnlocked = true;
       isFirstTier = true;
       unitType = UnitTypes.alpha;
