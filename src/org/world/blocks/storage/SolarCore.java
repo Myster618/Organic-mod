@@ -19,6 +19,8 @@ import mindustry.ui.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
+import static mindustry.Vars.*;
+
 public class SolarCore extends CoreBlock {
   public float powerProduction;
   public Stat generationType = Stat.basePowerGeneration;
