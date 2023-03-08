@@ -9,7 +9,7 @@ import mindustry.*;
 import mindustry.game.*;
 import mindustry.graphics.*;
 import mindustry.graphics.MultiPacker.*;
-import mindustry.world.blocks.*;
+import mindustry.world.blocks.storage*;
 import arc.struct.*;
 import arc.util.*;
 import arc.util.io.*;
