@@ -188,7 +188,7 @@ public class OrgBlocks {
     
     coreSprout = new SolarCore("core-sprout") {{
       requirements(Category.effect, ItemStack.with(OrgItems.carbon, 1200, OrgItems.calcium, 1000, OrgItems.phosphorus, 600));
-      powerProduction = 1.3f;
+      powerProduction = 10f;
       alwaysUnlocked = true;
       isFirstTier = true;
       unitType = UnitTypes.alpha;
