@@ -11,6 +11,7 @@ import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.environment.*;
+import mindustry.world.blocks.storage.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
@@ -177,5 +178,16 @@ public class OrgBlocks {
       resinFloor.asFloor().decoration = this;
       variants = 2;
     }};
+    
+    coreSprout = new SolarCore("core-sprout") {{
+      requirements(Category.effect, with(OrgItems.carbon, 1200, OrgItems.calcium, 1000, OrgItems.phosphorus, 600));
+      alwaysUnlocked = true;
+      isFirstTier = true;
+      unitType = UnitTypes.alpha;
+      unitCapModifier = 6;
+      itemCapacity = 3000;
+      health = 2000;
+      size = 3;
+    }
   }
 }
