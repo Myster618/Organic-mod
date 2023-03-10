@@ -60,6 +60,16 @@ public class SolarCore extends CoreBlock {
     public float getPowerProduction() {
       return powerProduction * productionEfficiency;
     }
+
+    @Override
+    public void updateTile(){
+      productionEfficiency = enabled ?
+        state.rules.solarMultiplier * Mathf.maxZero(Attribute.light.env() +
+          (state.rules.lighting ?
+            1f - state.rules.ambientLight.a :
+            1f
+          )) : 0f;
+     }
     
      @Override
      public void write(Writes write){
