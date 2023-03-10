@@ -30,6 +30,7 @@ public class SolarCore extends CoreBlock {
     hasPower = true;
     consumesPower = false;
     outputsPower = true;
+    envEnabled = Env.any;
   }
   
   @Override
