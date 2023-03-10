@@ -62,16 +62,6 @@ public class SolarCore extends CoreBlock {
     }
     
      @Override
-     public void updateTile() {
-         productionEfficiency = enabled ?
-             Mathf.maxZero(Attribute.light.env() +
-                 (state.rules.lighting ?
-                     1f - state.rules.ambientLight.a :
-                     1f
-                 )) : 0f;
-     }
-    
-     @Override
      public void write(Writes write){
          super.write(write);
          write.f(productionEfficiency);
