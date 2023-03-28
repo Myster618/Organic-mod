@@ -16,9 +16,10 @@ import mindustry.world.*;
 import org.*;
 import org.world.meta.*;
 import org.world.blocks.storage.*;
-import mindustry.content.*;
+import mindustry.content.fx.*;
 import mindustry.world.blocks.environment.*;
 import mindustry.world.blocks.storage.*;
+import mindustry.world.blocks.power.*
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
@@ -197,7 +198,7 @@ public class OrgBlocks {
       health = 2000;
       size = 3;
     }};
-    heatAbsorber = new ThermalGenerator("thermal-generator"){{
+    heatAbsorber = new ThermalGenerator("heat-absorber"){{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
       powerProduction = 0.5f;
       generateEffect = Fx.redgeneratespark;
@@ -207,7 +208,7 @@ public class OrgBlocks {
       ambientSound = Sounds.hum;
       ambientSoundVolume = 0.03f;
     }};
-    heatAbsorber = new ThermalGenerator("thermal-generator"){{
+    heatConcentrator = new ThermalGenerator("heat-concentrator"){{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
       powerProduction = 2.5f;
       generateEffect = Fx.redgeneratespark;
