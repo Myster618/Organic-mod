@@ -212,6 +212,23 @@ public class OrgBlocks {
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
       powerProduction = 2.5f;
       generateEffect = Fx.redgeneratespark;
+      drawer = new DrawMulti(
+        new DrawDefault(), 
+        new DrawRegion("-bottom"),
+        new DrawGlowRegion("-glow") {{
+          color = Color.valueOf("fa9566");
+          glowIntensity = 0.3f;
+        }}, 
+        new DrawParticles(){{
+          color = Color.valueOf("fa956y");
+          alpha = 0.8f;
+          particleSize = 1f;
+          particles = 23;
+          particleRad = 6f;
+          particleLife = 40f;
+          rotateScl = 4;
+          fadeMargin = 1;
+        }});
       effectChance = 0.011f;
       size = 2;
       floating = true;
