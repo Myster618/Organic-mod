@@ -219,7 +219,7 @@ public class OrgBlocks {
           glowIntensity = 0.3f;
         }}, 
         new DrawParticles(){{
-          color = Color.valueOf("fa956y");
+          color = Color.valueOf("fae5b1");
           alpha = 0.8f;
           particleSize = 1f;
           particles = 23;
