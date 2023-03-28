@@ -241,6 +241,7 @@ public class OrgBlocks {
     powerNode = new PowerNode("power-node") {{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 3, OrgItems.chitin, 2));
       size = 1;
+      consumePowerBuffered(1000f)
       health = 70;
       maxNodes = 8;
       laserRange = 6f;
@@ -250,7 +251,7 @@ public class OrgBlocks {
       size = 1;
       consumesPower = outputsPower = true;
       health = 90;
-      consumePowerBuffered(1000f);
+      consumePowerBuffered(800f);
       range = 10;
     }};
   }
