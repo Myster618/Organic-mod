@@ -198,7 +198,8 @@ public class OrgBlocks {
       health = 2000;
       size = 3;
     }};
-    heatAbsorber = new ThermalGenerator("heat-absorber"){{
+
+    heatAbsorber = new ThermalGenerator("heat-absorber") {{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
       powerProduction = 0.5f;
       generateEffect = Fx.redgeneratespark;
@@ -208,7 +209,8 @@ public class OrgBlocks {
       ambientSound = Sounds.hum;
       ambientSoundVolume = 0.03f;
     }};
-    heatConcentrator = new ThermalGenerator("heat-concentrator"){{
+
+    heatConcentrator = new ThermalGenerator("heat-concentrator") {{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
       powerProduction = 2.5f;
       generateEffect = Fx.redgeneratespark;
@@ -234,6 +236,22 @@ public class OrgBlocks {
       floating = true;
       ambientSound = Sounds.hum;
       ambientSoundVolume = 0.06f;
+    }};
+
+    powerNode = new PowerNode("power-node") {{
+      requirements(Category.power, ItemStack.with(OrgItems.carbon, 3, OrgItems.chitin, 2));
+      size = 1;
+      health = 70;
+      maxNodes = 8;
+      laserRange = 6f;
+    }};
+    beamNode = new BeamNode("beam-node"){{
+      requirements(Category.power, ItemStack.with(OrgItems.carbon, 3, OrgItems.chitin, 2));
+      size = 1;
+      consumesPower = outputsPower = true;
+      health = 90;
+      consumePowerBuffered(1000f);
+      range = 10;
     }};
   }
 }
