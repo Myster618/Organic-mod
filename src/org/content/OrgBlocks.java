@@ -213,7 +213,6 @@ public class OrgBlocks {
       powerProduction = 2.5f;
       generateEffect = Fx.redgeneratespark;
       drawer = new DrawMulti(
-        new DrawDefault(), 
         new DrawRegion("-bottom"),
         new DrawGlowRegion("-glow") {{
           color = Color.valueOf("fa9566");
@@ -228,7 +227,8 @@ public class OrgBlocks {
           particleLife = 40f;
           rotateScl = 4;
           fadeMargin = 1;
-        }});
+        }}, 
+        new DrawDefault());
       effectChance = 0.011f;
       size = 2;
       floating = true;
