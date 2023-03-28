@@ -19,7 +19,7 @@ import org.world.blocks.storage.*;
 import mindustry.content.fx.*;
 import mindustry.world.blocks.environment.*;
 import mindustry.world.blocks.storage.*;
-import mindustry.world.blocks.power.*
+import mindustry.world.blocks.power.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
