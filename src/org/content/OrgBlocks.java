@@ -187,7 +187,7 @@ public class OrgBlocks {
     }};
     
     coreSprout = new SolarCore("core-sprout") {{
-      requirements(Category.effect, ItemStack.with(OrgItems.carbon, 1200, OrgItems.calcium, 1000, OrgItems.phosphorus, 600));
+      requirements(Category.effect, ItemStack.with(OrgItems.carbon, 1200, OrgItems.chitin, 1000, OrgItems.phosphorus, 600));
       powerProduction = 10f;
       alwaysUnlocked = true;
       isFirstTier = true;
@@ -196,6 +196,26 @@ public class OrgBlocks {
       itemCapacity = 3000;
       health = 2000;
       size = 3;
+    }};
+    heatAbsorber = new ThermalGenerator("thermal-generator"){{
+      requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
+      powerProduction = 0.5f;
+      generateEffect = Fx.redgeneratespark;
+      effectChance = 0.011f;
+      size = 1;
+      floating = true;
+      ambientSound = Sounds.hum;
+      ambientSoundVolume = 0.03f;
+    }};
+    heatAbsorber = new ThermalGenerator("thermal-generator"){{
+      requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
+      powerProduction = 2.5f;
+      generateEffect = Fx.redgeneratespark;
+      effectChance = 0.011f;
+      size = 2;
+      floating = true;
+      ambientSound = Sounds.hum;
+      ambientSoundVolume = 0.06f;
     }};
   }
 }
