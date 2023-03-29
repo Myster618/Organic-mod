@@ -245,13 +245,20 @@ public class OrgBlocks {
       maxNodes = 12;
       laserRange = 7f;
     }};
-    beamNode = new BeamNode("beam-node"){{
+    beamNode = new BeamNode("beam-node") {{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 3, OrgItems.chitin, 2));
       size = 1;
       consumesPower = outputsPower = true;
       health = 90;
-      consumePowerBuffered(800f);
+      consumePowerBuffered(400f);
       range = 10;
+    }};
+    bioBattery = new Battery("bio-battery") {{
+      fullLightColor = Color.valueOf("b02c39");
+      size = 1;
+      health = 120;
+      baseExplosiveness = 1f;
+      consumePowerBuffered(8000f);
     }};
   }
 }
