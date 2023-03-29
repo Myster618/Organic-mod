@@ -176,11 +176,11 @@ public class OrgBlocks {
       variants = 2;
       squama.asFloor().decoration = squamaPlate.asFloor().decoration = this;
     }};
-    tree = new Prop("tree");
+    tree = new TreeBlock("tree");
 
-    treeFruits = new Prop("tree-fruits");
+    treeFruits = new TreeBlock("tree-fruits");
 
-    treeDead = new Prop("tree-dead");
+    treeDead = new TreeBlock("tree-dead");
 
     resinOutgrowth = new Prop("resin-outgrowth") {{
       resinFloor.asFloor().decoration = this;
