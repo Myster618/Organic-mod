@@ -187,9 +187,8 @@ public class OrgBlocks {
       variants = 2;
     }};
     
-    coreSprout = new SolarCore("core-sprout") {{
+    coreSprout = new CoreBlock("core-sprout") {{
       requirements(Category.effect, ItemStack.with(OrgItems.carbon, 1200, OrgItems.chitin, 1000, OrgItems.phosphorus, 600));
-      powerProduction = 10f;
       alwaysUnlocked = true;
       isFirstTier = true;
       unitType = UnitTypes.alpha;
@@ -245,6 +244,7 @@ public class OrgBlocks {
       maxNodes = 12;
       laserRange = 7f;
     }};
+
     beamNode = new BeamNode("beam-node") {{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 3, OrgItems.chitin, 2));
       size = 1;
@@ -253,12 +253,22 @@ public class OrgBlocks {
       consumePowerBuffered(400f);
       range = 10;
     }};
+
     bioBattery = new Battery("bio-battery") {{
+      requirements(Category.power, ItemStack.with(OrgItems.carbon, 10, OrgItems.chitin, 5));
       fullLightColor = Color.valueOf("b02c39");
       size = 1;
       health = 120;
       baseExplosiveness = 1f;
       consumePowerBuffered(8000f);
+    }};
+
+    carbonConveyor = new StackConveyor("carbon-conveyor"){{
+        requirements(Category.distribution, with(OrgItems.carbon, 2));
+        health = 40;
+        speed = 0.04f;
+        itemCapacity = 3;
+        alwaysUnlocked = true;
     }};
   }
 }
