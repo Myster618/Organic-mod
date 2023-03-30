@@ -188,7 +188,7 @@ public class OrgBlocks {
       variants = 2;
     }};
     
-    coreSprout = new CoreBlock("core-sprout") {{
+    coreSprout = new SolarCore("core-sprout") {{
       requirements(Category.effect, ItemStack.with(OrgItems.carbon, 1200, OrgItems.chitin, 1000, OrgItems.phosphorus, 600));
       alwaysUnlocked = true;
       isFirstTier = true;
