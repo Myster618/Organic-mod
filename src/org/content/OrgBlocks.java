@@ -20,7 +20,7 @@ import mindustry.content.*;
 import mindustry.world.blocks.environment.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.blocks.power.*;
-import mindustry.world.blocks.distribution.*
+import mindustry.world.blocks.distribution.*;
 import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
