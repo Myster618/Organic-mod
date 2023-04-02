@@ -265,7 +265,7 @@ public class OrgBlocks {
     }};
 
     carbonConveyor = new StackConveyor("carbon-conveyor"){{
-        requirements(Category.distribution, with(OrgItems.carbon, 2));
+        requirements(Category.distribution, ItemStack.with(OrgItems.carbon, 2));
         health = 40;
         speed = 0.04f;
         itemCapacity = 3;
