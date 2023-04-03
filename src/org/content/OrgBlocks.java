@@ -204,7 +204,7 @@ public class OrgBlocks {
       size = 2;
       itemCapacity = 500;
       scaledHealth = 55;
-      productionEfficiency = 60f;
+      powerProduction = 60f;
     }};
     
     heatAbsorber = new ThermalGenerator("heat-absorber") {{
