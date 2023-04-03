@@ -188,7 +188,7 @@ public class OrgBlocks {
       variants = 2;
     }};
     
-    coreSprout = new SolarCore("core-sprout") {{
+    coreSprout = new CoreBlock("core-sprout") {{
       requirements(Category.effect, ItemStack.with(OrgItems.carbon, 1200, OrgItems.chitin, 1000, OrgItems.phosphorus, 600));
       alwaysUnlocked = true;
       isFirstTier = true;
@@ -198,7 +198,15 @@ public class OrgBlocks {
       health = 2000;
       size = 3;
     }};
-
+    
+    reservoir = new SolarStorage("reservoir") {{
+      requirements(Category.effect, ItemStack.with(OrgItems.carbon, 100, OrgItems.chitin, 80, OrgItems.phosphorus, 25));
+      size = 2;
+      itemCapacity = 500;
+      scaledHealth = 55;
+      productionEfficiency = 60f;
+    }};
+    
     heatAbsorber = new ThermalGenerator("heat-absorber") {{
       requirements(Category.power, ItemStack.with(OrgItems.carbon, 30, OrgItems.chitin, 20));
       powerProduction = 0.5f;
