@@ -25,7 +25,7 @@ public class SolarStorage extends StorageBlock {
   public float powerProduction;
   public Stat generationType = Stat.basePowerGeneration;
   
-  public SolarCore(String name) {
+  public SolarStorage(String name) {
     super(name);
     hasPower = true;
     consumesPower = false;
