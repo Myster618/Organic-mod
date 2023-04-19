@@ -199,12 +199,11 @@ public class OrgBlocks {
       size = 3;
     }};
     
-    reservoir = new SolarStorage("reservoir") {{
+    reservoir = new StorageBlock("reservoir") {{
       requirements(Category.effect, ItemStack.with(OrgItems.carbon, 100, OrgItems.chitin, 80, OrgItems.phosphorus, 25));
       size = 2;
       itemCapacity = 500;
-      scaledHealth = 55;
-      powerProduction = 60f;
+      health = 200;
     }};
     
     heatAbsorber = new ThermalGenerator("heat-absorber") {{
