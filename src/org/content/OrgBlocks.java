@@ -203,8 +203,8 @@ public class OrgBlocks {
       requirements(Category.effect, ItemStack.with(OrgItems.carbon, 100, OrgItems.chitin, 80, OrgItems.phosphorus, 25));
       size = 2;
       itemCapacity = 500;
-      scaledHealth = 55;
-      powerProduction = 60f;
+      health = 200;
+      powerProduction = 5f;
     }};
     
     heatAbsorber = new ThermalGenerator("heat-absorber") {{
